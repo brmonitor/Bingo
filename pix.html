@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confirmação de pagamento Pix – BinGuloso</title><meta name="description" content="Pagou seu combo no Pix? Envie o comprovante pelo WhatsApp.">
+<meta property="og:title" content="BinGuloso do Vôlei Master – 11/12/2026"><meta property="og:description" content="Bingo solidário em prol da Associação Santa Luzia. Combo de 5 cartelas por R$ 20."><meta property="og:image" content="img/cartaz.jpg">
+<meta name="theme-color" content="#22e06b">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chewy&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet"></head>
+<body data-page="pix"><div id="nav"></div>
+<main><section class="titulo"><div class="container"><h1>Confirme seu Pix</h1><p class="mb-0">Pagou? Envie o comprovante em 1 minuto</p></div></section>
+<section class="container" style="max-width:640px">
+<div class="card-b mb-4"><h2>1. Faça o Pix</h2>
+<div id="pix-com" class="d-none"><p class="mb-1">Chave Pix:</p><div class="pixchave mb-2" id="pix-chave"></div><p class="small mb-2">Favorecido: <span id="pix-fav"></span></p>
+<button class="btn btn-bingo btn-verde" id="copiar" type="button"><i class="bi bi-clipboard"></i> Copiar chave Pix</button></div>
+<div id="pix-sem"><p class="mb-2">Peça a chave Pix para uma das organizadoras pelo WhatsApp e faça o pagamento.</p><a class="btn btn-bingo js-comprar" href="#" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> Comprar meu combo</a></div>
+<p class="small mt-3 mb-0">Valor: R$ 20,00 por combo de 5 cartelas.</p></div>
+<div class="card-b mb-4"><h2>2. Avise a organizadora</h2>
+<form id="form-pix"><div class="mb-3"><label class="form-label fw-semibold" for="f-nome">Seu nome</label><input class="form-control form-control-lg" id="f-nome" required autocomplete="name"></div>
+<div class="row g-3 mb-3"><div class="col-6"><label class="form-label fw-semibold" for="f-qtd">Combos</label><input class="form-control form-control-lg" id="f-qtd" type="number" min="1" max="50" value="1" inputmode="numeric" required></div>
+<div class="col-6"><label class="form-label fw-semibold" for="f-vend">Comprei com</label><select class="form-select form-select-lg" id="f-vend"></select></div></div>
+<p class="fs-5">Total: <strong id="f-total" style="color:var(--rosa)">R$ 20,00</strong></p>
+<button class="btn btn-bingo w-100" type="submit"><i class="bi bi-whatsapp"></i> Enviar pelo WhatsApp</button>
+<p class="small mt-2 mb-0">O WhatsApp vai abrir com a mensagem pronta. Anexe o comprovante e envie.</p></form></div>
+<div class="card-b"><h2>3. Pronto!</h2><ol class="passos mb-0"><li>A organizadora confirma o seu pagamento.</li><li>Você recebe suas cartelas.</li><li>Leve-as no dia 11/12, a partir das 19h30. 🎉</li></ol></div></section></main><div id="rodape"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script></body></html>
