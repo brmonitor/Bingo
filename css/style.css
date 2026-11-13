@@ -1,1 +1,56 @@
+:root{--verde:#22e06b;--verde-esc:#0a3d1f;--rosa:#ff2ed1;--roxo:#8b3df0;--azul:#3b6cf0;--ciano:#6fd2ff;--lima:#e6fb8a;--tinta:#111;--borda:#7a7cf5}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',system-ui,sans-serif;color:var(--tinta);min-height:100vh;
+background:linear-gradient(165deg,var(--lima) 0%,#7ff0c8 38%,var(--ciano) 68%,#c9a6ff 100%);background-attachment:fixed}
+h1,h2,h3,.pill,.btn-bingo,.navbar-brand{font-family:'Archivo Black','Poppins',sans-serif}
+.marca{font-family:'Chewy',cursive;color:var(--verde);-webkit-text-stroke:5px var(--verde-esc);paint-order:stroke fill;text-shadow:4px 4px 0 var(--azul);letter-spacing:.02em;line-height:.9;margin:0}
+.marca .g{font-size:1.25em;display:inline-block;transform:rotate(-4deg)}
+.navbar{background:rgba(255,255,255,.82);backdrop-filter:blur(8px);border-bottom:2px solid var(--borda)}
+.navbar-brand{font-size:1.5rem}.navbar-brand .marca{-webkit-text-stroke:3px var(--verde-esc);text-shadow:2px 2px 0 var(--azul);font-size:1.9rem}
+.nav-link{font-weight:600;color:var(--tinta)}.nav-link.active{color:var(--rosa)!important}
+.hero{position:relative;overflow:hidden;padding:2rem 0 3rem;text-align:center}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.35) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.35) 1px,transparent 1px);background-size:26px 26px;-webkit-mask-image:linear-gradient(180deg,#000,transparent 70%);mask-image:linear-gradient(180deg,#000,transparent 70%);pointer-events:none}
+.hero .container{position:relative;max-width:640px}
+.acao{font-family:'Archivo Black';font-size:clamp(1.3rem,6vw,2rem);letter-spacing:-.02em}
+.hero .marca{font-size:clamp(4rem,23vw,8.5rem);margin:.6rem 0 0}
+.vm{font-family:'Chewy';font-size:clamp(1.6rem,8vw,2.6rem);transform:rotate(-3deg);margin:-.2rem 0 1.2rem}
+.pill{border:2px solid var(--borda);border-radius:26px;background:rgba(255,255,255,.4);padding:.7rem 1rem;line-height:1.1;font-size:clamp(1.05rem,5vw,1.7rem);text-transform:uppercase}
+.pill .r{color:var(--rosa)}.pill.grande{font-size:clamp(2rem,11vw,3.6rem);padding:.5rem 1rem}
+.pill.peq{font-size:clamp(.95rem,4.2vw,1.4rem)}
+.bola{position:absolute;width:64px;height:64px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#c79bff,var(--roxo) 60%,#5a1fc0);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.4rem;border:3px solid rgba(255,255,255,.55);box-shadow:0 6px 14px rgba(90,31,192,.35)}
+.scooter-box{position:relative;margin-top:1.2rem}
+.scooter-box img{width:100%;max-width:420px;border-radius:28px;border:2px solid var(--borda);box-shadow:0 10px 30px rgba(59,108,240,.3)}
+.show{position:absolute;right:0;bottom:12px;max-width:48%;font-size:.95rem}
+.ilustra{font-size:.75rem;opacity:.7}
+.btn-bingo{background:var(--rosa);color:#fff;border:0;border-radius:999px;padding:.9rem 1.6rem;font-size:1.05rem;box-shadow:0 5px 0 #a8138a;transition:transform .1s}
+.btn-bingo:hover,.btn-bingo:focus{color:#fff;background:#e61fbe;transform:translateY(2px);box-shadow:0 3px 0 #a8138a}
+.btn-verde{background:var(--verde);color:var(--verde-esc);box-shadow:0 5px 0 #11a04b}.btn-verde:hover{background:#1bd062;color:var(--verde-esc);box-shadow:0 3px 0 #11a04b}
+.card-b{background:rgba(255,255,255,.62);border:2px solid var(--borda);border-radius:26px;padding:1.4rem}
+.card-b h2,.titulo h1{font-size:clamp(1.5rem,6vw,2.2rem)}
+.titulo{padding:2.2rem 0 1rem;text-align:center}.titulo h1{font-size:clamp(1.8rem,8vw,3rem)}
+.contagem{display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem;text-align:center}
+.contagem div{background:var(--verde-esc);color:#fff;border-radius:18px;padding:.7rem 0}
+.contagem b{display:block;font-family:'Archivo Black';font-size:clamp(1.6rem,9vw,2.6rem);color:var(--verde)}
+.contagem small{font-size:.75rem}
+.preco{font-family:'Archivo Black';font-size:3rem;color:var(--rosa);line-height:1}
+.vend{display:flex;justify-content:space-between;align-items:center;gap:.5rem;background:#fff;border:2px solid var(--borda);border-radius:18px;padding:.5rem .8rem;text-decoration:none;color:var(--tinta);font-weight:600}
+.vend:hover{border-color:var(--rosa);color:var(--tinta)}.vend span{color:#12853f;font-weight:500;font-size:.9rem}
+.logo-causa{width:92px;height:92px;border-radius:50%;border:2px solid var(--borda);background:#fff;object-fit:cover;transition:transform .15s}
+a:hover .logo-causa{transform:scale(1.06)}
+.premio{display:flex;gap:.8rem;align-items:center;background:#fff;border:2px solid var(--borda);border-radius:18px;padding:.7rem .9rem;height:100%}
+.premio .n{flex:0 0 40px;height:40px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#c79bff,var(--roxo));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
+.premio small{display:block;color:#555}
+.accordion{--bs-accordion-bg:transparent;--bs-accordion-border-color:var(--borda);--bs-accordion-active-bg:#fff;--bs-accordion-active-color:var(--tinta)}
+.accordion-item{background:rgba(255,255,255,.62);border:2px solid var(--borda)!important;border-radius:20px!important;margin-bottom:.7rem;overflow:hidden}
+.accordion-button{font-weight:600;background:transparent}.accordion-button:focus{box-shadow:0 0 0 .2rem rgba(255,46,209,.3)}
+.mapa{width:100%;height:340px;border:2px solid var(--borda);border-radius:24px}
+.zap{position:fixed;right:14px;bottom:14px;z-index:1030;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.9rem;box-shadow:0 6px 16px rgba(0,0,0,.3);text-decoration:none}
+.zap:hover{color:#fff;background:#1ebe5a}
+footer{background:var(--verde-esc);color:#fff;padding:2rem 0 5rem;margin-top:3rem}footer a{color:var(--verde)}
+footer .marca{font-size:2.2rem;-webkit-text-stroke:3px #000;text-shadow:2px 2px 0 var(--azul)}
+.passos li{margin-bottom:.6rem}
+.pixchave{word-break:break-all;background:#fff;border:2px dashed var(--rosa);border-radius:16px;padding:.8rem;font-weight:600}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--rosa);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media(max-width:575px){body{background-attachment:scroll}}
 
